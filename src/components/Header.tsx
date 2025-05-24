@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
+        scrolled ? 'bg-white shadow-md py-0' : 'bg-transparent py-0'
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
