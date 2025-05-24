@@ -39,7 +39,7 @@ GlucoWise is a comprehensive mobile application designed to support individuals 
 ## 📱 Tech Stack
 
 - **Frontend:** SwiftUI (iOS)
-- **Backend:** Firebase / Node.js (Optional)
+- **Backend:** SupaBase
 - **APIs:** Nutritionix for food analysis  
 - **AI Models:** NARMAX / Time Series Regression (for glucose prediction and meal optimization)
 
