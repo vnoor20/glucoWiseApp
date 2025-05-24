@@ -58,12 +58,6 @@ const Header = () => {
               Technology
             </a>
             <a
-              href="#testimonials"
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              Testimonials
-            </a>
-            <a
               href="#faq"
               className="text-gray-700 hover:text-primary transition-colors"
             >
@@ -126,13 +120,6 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Technology
-              </a>
-              <a
-                href="#testimonials"
-                className="text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                Testimonials
               </a>
               <a
                 href="#faq"
