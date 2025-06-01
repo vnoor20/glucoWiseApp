@@ -1,6 +1,6 @@
 import React from 'react';
 import { Activity, Phone, Mail, MapPin } from 'lucide-react';
-
+import PrivacyPolicy from '../privacy.tsx'
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
@@ -52,7 +52,7 @@ const Footer = () => {
                 <a href="#faq" className="text-gray-400 hover:text-primary transition-colors">Device Compatibility</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
+                <a href="/PrivacyPolicy" className="text-gray-400 hover:text-primary transition-colors">Privacy Policy</a>
               </li>
               <li>
                 <a href="#" className="text-gray-400 hover:text-primary transition-colors">Terms of Service</a>
@@ -85,7 +85,7 @@ const Footer = () => {
               &copy; {new Date().getFullYear()} GlucoWise. All rights reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
-              <a href="#" className="text-gray-500 hover:text-primary text-sm transition-colors">Privacy Policy</a>
+              <a href="/PrivacyPolicy" className="text-gray-500 hover:text-primary text-sm transition-colors">Privacy Policy</a>
               <a href="#" className="text-gray-500 hover:text-primary text-sm transition-colors">Terms of Service</a>
               <a href="#" className="text-gray-500 hover:text-primary text-sm transition-colors">Cookie Policy</a>
             </div>
