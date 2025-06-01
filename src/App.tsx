@@ -12,7 +12,7 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-import PrivacyPolicy from './pages/PrivacyPolicy';
+import PrivacyPolicy from '/PrivacyPolicy';
 
 function App() {
   return (
