@@ -21,7 +21,6 @@ const Header = () => {
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'
-
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,49 +32,13 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a
-              href="#about"
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              About
-            </a>
-            <a
-              href="#features"
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              Features
-            </a>
-            <a
-              href="#how-it-works"
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              How It Works
-            </a>
-            <a
-              href="#technology"
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              Technology
-            </a>
-            <a
-              href="#faq"
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              FAQ
-            </a>
-            <a
-              href="#contact"
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              Contact
-            </a>
-            <a
-              href="#about-us"
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              About Us
-            </a>
-            
+            <a href="#about" className="text-gray-700 hover:text-primary transition-colors">About</a>
+            <a href="#features" className="text-gray-700 hover:text-primary transition-colors">Features</a>
+            <a href="#how-it-works" className="text-gray-700 hover:text-primary transition-colors">How It Works</a>
+            <a href="#technology" className="text-gray-700 hover:text-primary transition-colors">Technology</a>
+            <a href="#faq" className="text-gray-700 hover:text-primary transition-colors">FAQ</a>
+            <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Contact</a>
+            <a href="#about-us" className="text-gray-700 hover:text-primary transition-colors">About Us</a>
           </nav>
 
           {/* Mobile menu button */}
@@ -93,48 +56,13 @@ const Header = () => {
         {isOpen && (
           <div className="md:hidden mt-4 py-4 bg-white shadow-lg rounded-lg">
             <div className="flex flex-col space-y-4 px-4">
-              <a
-                href="#about"
-                className="text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                About
-              </a>
-              <a
-                href="#features"
-                className="text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                Features
-              </a>
-              <a
-                href="#how-it-works"
-                className="text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                How It Works
-              </a>
-              <a
-                href="#technology"
-                className="text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                Technology
-              </a>
-              <a
-                href="#faq"
-                className="text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                FAQ
-              </a>
-              <a
-                href="#contact"
-                className="text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </a>
+              <a href="#about" className="text-gray-700 hover:text-primary transition-colors py-2" onClick={() => setIsOpen(false)}>About</a>
+              <a href="#features" className="text-gray-700 hover:text-primary transition-colors py-2" onClick={() => setIsOpen(false)}>Features</a>
+              <a href="#how-it-works" className="text-gray-700 hover:text-primary transition-colors py-2" onClick={() => setIsOpen(false)}>How It Works</a>
+              <a href="#technology" className="text-gray-700 hover:text-primary transition-colors py-2" onClick={() => setIsOpen(false)}>Technology</a>
+              <a href="#faq" className="text-gray-700 hover:text-primary transition-colors py-2" onClick={() => setIsOpen(false)}>FAQ</a>
+              <a href="#contact" className="text-gray-700 hover:text-primary transition-colors py-2" onClick={() => setIsOpen(false)}>Contact</a>
+              <a href="#about-us" className="text-gray-700 hover:text-primary transition-colors py-2" onClick={() => setIsOpen(false)}>About Us</a>
             </div>
           </div>
         )}

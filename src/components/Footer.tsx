@@ -1,11 +1,12 @@
 import React from 'react';
-import { Activity, Phone, Mail, MapPin } from 'lucide-react';
-import PrivacyPolicy from '../PrivacyPolicy.tsx'
+import { Activity } from 'lucide-react';
+import { Link } from 'react-router-dom'; 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+         
           <div>
             <div className="flex items-center mb-6">
               <Activity className="h-8 w-8 text-primary mr-2" />
@@ -15,53 +16,33 @@ const Footer = () => {
               Empowering people with diabetes to live healthier, more confident lives through intelligent tracking and personalized insights.
             </p>
           </div>
+
           
           <div>
             <h3 className="text-lg font-semibold text-white mb-6">Quick Links</h3>
             <ul className="space-y-4">
-            <li>
-                <a href="#about" className="text-gray-400 hover:text-primary transition-colors">About Us</a>
-              </li>
-              <li>
-                <a href="#about-us" className="text-gray-400 hover:text-primary transition-colors">Our Creators</a>
-              </li>
-              <li>
-                <a href="#features" className="text-gray-400 hover:text-primary transition-colors">Features</a>
-              </li>
-              <li>
-                <a href="#how-it-works" className="text-gray-400 hover:text-primary transition-colors">How It Works</a>
-              </li>
-              
-              <li>
-                <a href="#faq" className="text-gray-400 hover:text-primary transition-colors">FAQ</a>
-              </li>
-              <li>
-                <a href="#contact" className="text-gray-400 hover:text-primary transition-colors">Contact</a>
-              </li>
+              <li><a href="#about" className="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
+              <li><a href="#about-us" className="text-gray-400 hover:text-primary transition-colors">Our Creators</a></li>
+              <li><a href="#features" className="text-gray-400 hover:text-primary transition-colors">Features</a></li>
+              <li><a href="#how-it-works" className="text-gray-400 hover:text-primary transition-colors">How It Works</a></li>
+              <li><a href="#faq" className="text-gray-400 hover:text-primary transition-colors">FAQ</a></li>
+              <li><a href="#contact" className="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
             </ul>
           </div>
+
           
           <div>
             <h3 className="text-lg font-semibold text-white mb-6">Resources</h3>
             <ul className="space-y-4">
-              
+              <li><a href="#contact" className="text-gray-400 hover:text-primary transition-colors">Support Center</a></li>
+              <li><a href="#faq" className="text-gray-400 hover:text-primary transition-colors">Device Compatibility</a></li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-primary transition-colors">Support Center</a>
+                <Link to="/privacy-policy" className="text-gray-400 hover:text-primary transition-colors">Privacy Policy</Link>
               </li>
-              <li>
-                <a href="#faq" className="text-gray-400 hover:text-primary transition-colors">Device Compatibility</a>
-              </li>
-              <li>
-                 <Link to="/privacy-policy" className="text-gray-400 hover:text-primary transition-colors">
-      Privacy Policy
-    </Link>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-primary transition-colors">Terms of Service</a>
-              </li>
-             
+              <li><a href="#" className="text-gray-400 hover:text-primary transition-colors">Terms of Service</a></li>
             </ul>
           </div>
+
           
           <div>
             <div className="mt-8">
@@ -80,16 +61,15 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
+       
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm">
               &copy; {new Date().getFullYear()} GlucoWise. All rights reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
-               <Link to="/privacy-policy" className="text-gray-500 hover:text-primary text-sm transition-colors">
-      Privacy Policy
-    </Link>
+              <Link to="/privacy-policy" className="text-gray-500 hover:text-primary text-sm transition-colors">Privacy Policy</Link>
               <a href="#" className="text-gray-500 hover:text-primary text-sm transition-colors">Terms of Service</a>
               <a href="#" className="text-gray-500 hover:text-primary text-sm transition-colors">Cookie Policy</a>
             </div>

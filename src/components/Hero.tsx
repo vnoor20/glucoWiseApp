@@ -3,6 +3,7 @@ import { ArrowRight, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
+    
     <section className="relative pt-20 lg:pt-24 pb-16 lg:pb-24 overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 z-0 opacity-5">
