@@ -26,10 +26,10 @@ const PrivacyPolicy = () => {
 
         <h3>Health and Activity Data</h3>
         <ul>
-          <li>Blood glucose readings logged by you.</li>
+          <li>Blood glucose readings logged by you or synced via HealthKit.</li>
           <li>Meals and dietary data, including glycemic index values.</li>
-          <li>Physical activity synced from Apple HealthKit (e.g., steps, exercise).</li>
-          <li>HBA1c levels and related health metrics.</li>
+          <li>Physical activity synced from Apple HealthKit (e.g., steps, exercise duration).</li>
+          <li>HBA1c levels and related metrics.</li>
         </ul>
 
         <h3>App Usage Data</h3>
@@ -39,52 +39,68 @@ const PrivacyPolicy = () => {
           <li>Task completion rates and feedback on recommendations.</li>
         </ul>
 
+        <h2>HealthKit Integration</h2>
+        <p>We use Apple’s HealthKit framework to read and, where applicable, write relevant health data with your explicit consent. This includes:</p>
+        <ul>
+          <li>Blood glucose levels</li>
+          <li>Insulin delivery</li>
+          <li>Carbohydrate intake</li>
+          <li>Body weight</li>
+          <li>Physical activity (steps, workouts, active energy)</li>
+        </ul>
+        <p>
+          This data is used to power GlucoWise’s core features such as personalized meal recommendations, health trend insights, and goal tracking. For example, your glucose patterns and activity levels help generate smarter, safer food suggestions tailored to your current condition.
+        </p>
+        <p>
+          We never use HealthKit data for advertising purposes, nor do we share it with third parties without your consent.
+        </p>
+
         <h2>How We Use Your Data</h2>
         <ul>
           <li><strong>Authentication & Account Management:</strong> To create, secure, and manage your account.</li>
-          <li><strong>Personalized Recommendations:</strong> Analyzing health data to offer customized suggestions.</li>
-          <li><strong>Service Improvement:</strong> Using aggregated usage data to enhance features.</li>
-          <li><strong>Communication:</strong> Sending tips, updates, or critical notifications (opt-out available).</li>
+          <li><strong>Personalized Recommendations:</strong> Analyzing health and activity data (including HealthKit) to offer customized meal and lifestyle suggestions.</li>
+          <li><strong>Service Improvement:</strong> Using aggregated, anonymized data to enhance features and performance.</li>
+          <li><strong>Communication:</strong> Sending relevant tips, critical health alerts, or updates (opt-out options available).</li>
         </ul>
 
         <h2>Data Security Measures</h2>
         <ul>
-          <li><strong>Encryption:</strong> All data is encrypted in transit and at rest.</li>
-          <li><strong>Secure Authentication:</strong> Secure login methods protect your account.</li>
-          <li><strong>Protected Storage:</strong> Profile photos and media stored securely.</li>
-          <li><strong>Supabase Security:</strong> Used for secure authentication and access control.</li>
+          <li><strong>Encryption:</strong> All user data is encrypted in transit and at rest.</li>
+          <li><strong>Secure Authentication:</strong> Password and token-based login security.</li>
+          <li><strong>Protected Storage:</strong> Photos and personal records stored using secure cloud standards.</li>
+          <li><strong>Supabase:</strong> Secure authentication, authorization, and database protection.</li>
         </ul>
 
         <h2>Use of Device Capabilities</h2>
         <ul>
-          <li><strong>Camera Access:</strong> To take your profile picture within the app.</li>
-          <li><strong>Photo Library Access:</strong> Optional upload from gallery.</li>
-          <li><strong>HealthKit Access:</strong> Syncing physical activity and health metrics.</li>
-          <li><strong>Permission Control:</strong> Manage via device settings.</li>
+          <li><strong>Camera:</strong> To take a profile picture directly within the app.</li>
+          <li><strong>Photo Library:</strong> To optionally select images from your device.</li>
+          <li><strong>HealthKit Access:</strong> To read fitness and health metrics for enhanced tracking and meal insights.</li>
+          <li><strong>Permission Control:</strong> You can modify app permissions at any time in your iOS settings.</li>
         </ul>
 
         <h2>Data Sharing and Third-Party Services</h2>
-        <p>We do <strong>not</strong> sell your personal data. Limited sharing to support functions:</p>
+        <p>We do <strong>not</strong> sell or trade your data. Limited sharing with trusted services includes:</p>
         <ul>
-          <li><strong>Supabase:</strong> Authentication, storage, and synchronization.</li>
-          <li><strong>Generative AI:</strong> To provide food and health recommendations.</li>
-          <li><strong>Analytics Services:</strong> Anonymized usage behavior insights.</li>
+          <li><strong>Supabase:</strong> For authentication, real-time data sync, and secure storage.</li>
+          <li><strong>Generative AI Models:</strong> Used to generate meal suggestions and glucose forecasts based on your health inputs.</li>
+          <li><strong>Analytics Services:</strong> Aggregated, anonymized behavior analytics for feature refinement.</li>
         </ul>
 
         <h2>Compliance with Data Protection Laws</h2>
         <ul>
-          <li><strong>GDPR (EU Users):</strong> Rights to access, correct, or delete personal data.</li>
-          <li><strong>CCPA (California Residents):</strong> Request access or opt out of data sharing.</li>
+          <li><strong>GDPR (EU):</strong> You can request access, correction, or deletion of your personal data at any time.</li>
+          <li><strong>CCPA (California):</strong> Right to know, delete, or opt out of data sharing as applicable.</li>
         </ul>
 
         <h2>Your Rights and Choices</h2>
         <ul>
-          <li><strong>Access & Update:</strong> Modify data in app settings.</li>
-          <li><strong>Data Portability:</strong> Export your data in a common format.</li>
-          <li><strong>Data Deletion:</strong> Delete your account or request full data removal.</li>
+          <li><strong>Access & Update:</strong> Modify your profile and health data via app settings.</li>
+          <li><strong>Data Portability:</strong> Export your data in structured formats.</li>
+          <li><strong>Delete Account:</strong> Request permanent account deletion through our support team.</li>
         </ul>
 
-        <p>Contact us at: <a href="mailto:support@glucowise.com">support@glucowise.com</a></p>
+{/*         <p>Contact us at: <a href="mailto:support@glucowise.com">support@glucowise.com</a></p> */}
 
         <footer>&copy; 2025 GlucoWise. All rights reserved.</footer>
       </div>
