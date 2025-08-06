@@ -40,14 +40,7 @@ const PrivacyPolicy = () => {
         </ul>
 
         <h2>HealthKit Integration</h2>
-        <p>We use Apple’s HealthKit framework to read and, where applicable, write relevant health data with your explicit consent. This includes:</p>
-        <ul>
-          <li>Blood glucose levels</li>
-          <li>Insulin delivery</li>
-          <li>Carbohydrate intake</li>
-          <li>Body weight</li>
-          <li>Physical activity (steps, workouts, active energy)</li>
-        </ul>
+        <p>Glucowise uses Apple’s HealthKit framework to access and store your health data locally on your device and, with your permission, read or write data to the Health app. </p>
         <p>
           This data is used to power GlucoWise’s core features such as personalized meal recommendations, health trend insights, and goal tracking. For example, your glucose patterns and activity levels help generate smarter, safer food suggestions tailored to your current condition.
         </p>
