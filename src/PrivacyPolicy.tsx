@@ -2,173 +2,83 @@ import React from "react";
 
 const PrivacyPolicy = () => {
   return (
-    <>
-      <head>
-        <title>Privacy Policy - GlucoWise</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
-      <div className="container">
-        <h1>Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> [Insert Date]</p>
-        <p>
-          At <strong>GlucoWise</strong>, your privacy is our priority. This Privacy Policy explains how we collect,
-          use, protect, and share your information when you use our diabetes lifestyle management system. By using the
-          GlucoWise app, you agree to the practices described below.
-        </p>
+    <div className="container mx-auto px-6 py-10 text-gray-800 pt-20">
+      <h1 className="text-3xl font-bold mb-6">Privacy Policy - GlucoWise</h1>
+      <p>
+        <strong>Effective Date:</strong> August 16, 2025
+      </p>
 
-        <h2>Data Collection</h2>
-        <p>We collect both personal and non-personal information to provide and improve our services:</p>
+      <p className="mt-4">
+        At GlucoWise, your privacy is very important to us. This Privacy Policy
+        explains how we collect, use, and safeguard your information when you
+        use our application.
+      </p>
 
-        <h3>Account Information</h3>
-        <ul>
-          <li>Name, email address, and optional profile picture or other details provided during sign-up or login.</li>
-        </ul>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">1. Data Collection</h2>
+      <p>
+        GlucoWise integrates with Apple HealthKit to provide health-related
+        features. With your explicit consent, we may collect and store data such
+        as:
+      </p>
+      <ul className="list-disc list-inside mt-2">
+        <li>Blood glucose readings</li>
+        <li>Dietary and activity data</li>
+        <li>Basic health metrics (age, weight, height, etc.)</li>
+      </ul>
+      <p className="mt-2">
+        We also collect limited account information (such as name, email, and
+        profile details) to personalize your experience. Data related to meals,
+        activity logs, and progress may be securely stored in our database
+        powered by Supabase.
+      </p>
 
-        <h3>Health and Activity Data</h3>
-        <ul>
-          <li>Blood glucose readings logged by you or synced via HealthKit.</li>
-          <li>Meals and dietary data, including glycemic index values.</li>
-          <li>Physical activity synced from Apple HealthKit (e.g., steps, exercise duration).</li>
-          <li>HBA1c levels and related metrics.</li>
-        </ul>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">2. Data Usage</h2>
+      <p>
+        The collected data is used solely to provide insights, personalized
+        recommendations, and improve your experience with GlucoWise. We do not
+        use your health data for advertising or sell it to third parties.
+      </p>
 
-        <h3>App Usage Data</h3>
-        <ul>
-          <li>Pages visited and features used.</li>
-          <li>User patterns for meal logging, activity tracking, and progress monitoring.</li>
-          <li>Task completion rates and feedback on recommendations.</li>
-        </ul>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">3. Data Storage</h2>
+      <p>
+        Your health data remains stored securely on your device and, if you
+        choose, in your iCloud account. Data stored on our servers (via
+        Supabase) is encrypted and protected with industry-standard
+        security measures. Sensitive HealthKit data is never uploaded without
+        your explicit permission.
+      </p>
 
-        <h2>HealthKit Integration</h2>
-        <p>Glucowise uses Apple’s HealthKit framework to access and store your health data locally on your device and, with your permission, read or write data to the Health app. </p>
-        <p>
-          This data is used to power GlucoWise’s core features such as personalized meal recommendations, health trend insights, and goal tracking. For example, your glucose patterns and activity levels help generate smarter, safer food suggestions tailored to your current condition.
-        </p>
-        <p>
-          We never use HealthKit data for advertising purposes, nor do we share it with third parties without your consent.
-        </p>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">
+        4. Sharing of Information
+      </h2>
+      <p>
+        GlucoWise does not share your personal or health data with third
+        parties. If data export is enabled by you, it will only be shared with
+        your chosen healthcare providers or exported manually by you.
+      </p>
 
-        <h2>How We Use Your Data</h2>
-        <ul>
-          <li><strong>Authentication & Account Management:</strong> To create, secure, and manage your account.</li>
-          <li><strong>Personalized Recommendations:</strong> Analyzing health and activity data (including HealthKit) to offer customized meal and lifestyle suggestions.</li>
-          <li><strong>Service Improvement:</strong> Using aggregated, anonymized data to enhance features and performance.</li>
-          <li><strong>Communication:</strong> Sending relevant tips, critical health alerts, or updates (opt-out options available).</li>
-        </ul>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">5. Your Rights</h2>
+      <p>
+        You have full control over your data. You can revoke HealthKit
+        permissions, request deletion of your account data stored in Supabase,
+        or uninstall the app at any time to stop data collection.
+      </p>
 
-        <h2>Data Security Measures</h2>
-        <ul>
-          <li><strong>Encryption:</strong> All user data is encrypted in transit and at rest.</li>
-          <li><strong>Secure Authentication:</strong> Password and token-based login security.</li>
-          <li><strong>Protected Storage:</strong> Photos and personal records stored using secure cloud standards.</li>
-          <li><strong>Supabase:</strong> Secure authentication, authorization, and database protection.</li>
-        </ul>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">6. Children’s Privacy</h2>
+      <p>
+        GlucoWise is not intended for use by individuals under the age of 13. We
+        do not knowingly collect data from children. If we become aware that we
+        have collected personal information from a child, we will take steps to
+        delete it promptly.
+      </p>
 
-        <h2>Use of Device Capabilities</h2>
-        <ul>
-          <li><strong>Camera:</strong> To take a profile picture directly within the app.</li>
-          <li><strong>Photo Library:</strong> To optionally select images from your device.</li>
-          <li><strong>HealthKit Access:</strong> To read fitness and health metrics for enhanced tracking and meal insights.</li>
-          <li><strong>Permission Control:</strong> You can modify app permissions at any time in your iOS settings.</li>
-        </ul>
-
-        <h2>Data Sharing and Third-Party Services</h2>
-        <p>We do <strong>not</strong> sell or trade your data. Limited sharing with trusted services includes:</p>
-        <ul>
-          <li><strong>Supabase:</strong> For authentication, real-time data sync, and secure storage.</li>
-          <li><strong>Generative AI Models:</strong> Used to generate meal suggestions and glucose forecasts based on your health inputs.</li>
-          <li><strong>Analytics Services:</strong> Aggregated, anonymized behavior analytics for feature refinement.</li>
-        </ul>
-
-        <h2>Compliance with Data Protection Laws</h2>
-        <ul>
-          <li><strong>GDPR (EU):</strong> You can request access, correction, or deletion of your personal data at any time.</li>
-          <li><strong>CCPA (California):</strong> Right to know, delete, or opt out of data sharing as applicable.</li>
-        </ul>
-
-        <h2>Your Rights and Choices</h2>
-        <ul>
-          <li><strong>Access & Update:</strong> Modify your profile and health data via app settings.</li>
-          <li><strong>Data Portability:</strong> Export your data in structured formats.</li>
-          <li><strong>Delete Account:</strong> Request permanent account deletion through our support team.</li>
-        </ul>
-
-{/*         <p>Contact us at: <a href="mailto:support@glucowise.com">support@glucowise.com</a></p> */}
-
-        <footer>&copy; 2025 GlucoWise. All rights reserved.</footer>
-      </div>
-
-      <style jsx>{`
-        body {
-          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-            Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-          background-color: #f9f9f9;
-          color: #333;
-          margin: 0;
-          padding: 0 15px;
-          line-height: 1.6;
-        }
-
-        .container {
-          max-width: 900px;
-          margin: 40px auto;
-          background: #fff;
-          padding: 30px 40px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          border-radius: 8px;
-          padding-top: 100px; 
-        }
-
-        h1 {
-          font-size: 2.2rem;
-          margin-bottom: 0.5em;
-          color: #6cab9d;
-        }
-
-        h2 {
-          font-size: 1.5rem;
-          margin-top: 1.8em;
-          margin-bottom: 0.5em;
-          color: #6cab9d;
-        }
-
-        h3 {
-          font-size: 1.2rem;
-          margin-top: 1.4em;
-          color: #6cab9d;
-        }
-
-        p,
-        ul {
-          font-size: 1rem;
-          margin-bottom: 1em;
-        }
-
-        ul {
-          padding-left: 20px;
-        }
-
-        li {
-          margin-bottom: 0.5em;
-        }
-
-        footer {
-          margin-top: 50px;
-          font-size: 0.9rem;
-          color: #666;
-          text-align: center;
-        }
-
-        a {
-          color: #2a7ade;
-          text-decoration: none;
-        }
-
-        a:hover {
-          text-decoration: underline;
-        }
-      `}</style>
-    </>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">7. Contact Us</h2>
+      <p>
+        If you have any questions or concerns about this Privacy Policy, you may
+        contact us at:
+      </p>
+      <p className="mt-2 font-medium">support@glucowiseapp.com</p>
+    </div>
   );
 };
 
